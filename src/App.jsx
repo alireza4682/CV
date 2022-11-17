@@ -1,7 +1,11 @@
-import "./App.css";
+import { Information } from "./components/information.component";
 
 function App() {
-  return <div className=""></div>;
+  return (
+    <div>
+      <Information />
+    </div>
+  );
 }
 
 export default App;
