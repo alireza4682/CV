@@ -1,10 +1,10 @@
-export default Discription = () => {
+const Discription = () => {
   return (
-    <div className="flex flex-row items-center">
-      <h3 className="bg-black text-center text-white rounded-full my-3">
+    <div className="flex flex-col space-y-6">
+      <h3 className="bg-black text-center text-white rounded-full my-3 px-2 py-[.5]">
         Free shiping
       </h3>
-      <h1 className="text-lg font-bold mt-3 mb-10">
+      <h1 className="text-2xl font-bold mt-3 mb-10">
         Razer Kraken kitty Edt Gaming Headset Quartz
       </h1>
       <h2 className="text-sm">$799</h2>
@@ -18,3 +18,5 @@ export default Discription = () => {
     </div>
   );
 };
+
+export default Discription;
