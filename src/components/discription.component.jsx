@@ -1,20 +1,44 @@
 const Discription = () => {
   return (
     <div className="flex flex-col space-y-6">
-      <h3 className="bg-black text-center text-white rounded-full my-3 px-2 py-[.5]">
-        Free shiping
-      </h3>
-      <h1 className="text-2xl font-bold mt-3 mb-10">
-        Razer Kraken kitty Edt Gaming Headset Quartz
-      </h1>
-      <h2 className="text-sm">$799</h2>
-      <h1 className="text-xl font-bold">$599</h1>
-      <h4 className="text-xs font-slate-300">
-        the offer is valid until April 3 or as long as stock lasts!
-      </h4>
-      <button></button>
-      <div></div>
-      <div></div>
+      <div className="flex flex-col mb-4 space-y-3 text-center md:text-left">
+        <div>
+          <div className="inline-block px-3 py-1 text-sm text-white bg-black rounded-full">
+            Free Shiping
+          </div>
+        </div>
+        <div className="max-w-sm text-2xl font-medium">
+          Razer Kraken Kitty Edt Gaming Headset Quartz
+        </div>
+        <div className="flex flex-col mb-4 space-y-3 text-center md:text-left">
+          <p className="line-through">$799</p>
+          <p className="text-5xl font bold">$599</p>
+          <p className="text-sm font-light text-gray-400">
+            This offer is valid until April 3rd or as long as stock lasts!
+          </p>
+        </div>
+        <div className="group">
+          <button className="w-full transition-all duration-150 bg-blue-700 text-white border-b-8 border-b-blue-700 rounded-lg group-hover:border-t-8 group-hover:border-b-0 group-hover:bg-blue-700 group-hover:border-t-blue-700 group-hover:shadow-lg">
+            <div className="px-8 py-4 duration-150 bg-blue-500 rounded-lg group-hover:bg-blue-700">
+              Add to cart
+            </div>
+          </button>
+        </div>
+        <div className="flex items-center space-x-3 group">
+          <div className="w-3 h-3 bg-green-400 rounded-full group-hover:animate-ping"></div>
+          <div className="text-sm">50+ pcs. in stock</div>
+        </div>
+        <div className="flex flex-col space-y-4 md:space-y-0 md:space-x-4 md:flex-row">
+          <button className="flex items-center justify-center py-3 px-5 space-x3 border-2 border-gray-300 rounded-lg shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration 150">
+            <img src="../../src/assets/weight.png" alt="" className="w-8" />
+            <span>Add to cart</span>
+          </button>
+          <button className="flex items-center justify-center py-3 px-5 space-x3 border-2 border-gray-300 rounded-lg shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration 150">
+            <img src="../../src/assets/heart.png" alt="" className="w-8" />
+            <span>Add to wishlist</span>
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
